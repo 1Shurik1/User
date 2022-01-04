@@ -10,11 +10,11 @@
     <tbody>
       <tr *ngFor ="let user of user">
       <td><a [routerLink]="[':id' + user._id]">{{user._id}}</a></td>
-      <td>{{user.age}}</td>
-      <td>{{user.address}}</td>
-      <td>{{user.company}}</td>
-      <td>{{user.email}}</td>
-      <td>{{user.name}}</td>
+      <td><a [routerLink]="[':id' + user._id]">{{user.age}}</a></td>
+      <td><a [routerLink]="[':id' + user._id]">{{user.address}}</a></td>
+      <td><a [routerLink]="[':id' + user._id]">{{user.company}}</a></td>
+      <td><a [routerLink]="[':id' + user._id]">{{user.email}}</a></td>
+      <td><a [routerLink]="[':id' + user._id]">{{user.name}}</a></td>
       </tr>
     </tbody>
   </table>
